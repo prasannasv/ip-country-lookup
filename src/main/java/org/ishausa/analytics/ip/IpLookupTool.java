@@ -17,8 +17,13 @@ import java.io.OutputStreamWriter;
 import java.net.InetAddress;
 
 /**
- * Hello world!
- *
+ * Usage: Pass in the list of csv files that contain just the IP addresses.
+ * The output will be written as a tab-separated-value format (tsv) with the following details:
+ * ip city-name state-iso-code state-name country-name
+ * 
+ * The output file is formed from the input file after adding the -city-info.tsv suffix.
+ * 
+ * @author Prasanna
  */
 public class IpLookupTool {
     private final DatabaseReader cityInfo;
